@@ -1,0 +1,26 @@
+name: ${project.name}
+version: '${project.version}'
+description: '${project.description}'
+
+author: davewolax
+authors: [janmm14]
+website: https://github.com/davewolax/ChatTranslator
+
+main: com.github.davewolax.Main
+depend: [ProtocolLib]
+#softdepend: []
+#loadbefore: []
+
+#commands:
+  #cmdname:
+    #description:
+    #aliases:
+    #permission:
+    #usage:
+
+#permissions:
+  #${project.name}.permission:
+    #description:
+    #default:
+    #children:
+      #${project.name}.permission2: true
