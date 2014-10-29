@@ -3,7 +3,7 @@ ChatTranslator
 
 What is this plugin?
 
-This is a Spigot plugin that translates the server language and chat instantly for all players to their native 
+This is a Spigot plugin that translates the server language and chat instantly for all players to their native.
 
 
 Why This plugin?
@@ -21,4 +21,4 @@ This plugin will be able to translate chat when a player type for example french
 Features:
 
 Player will be informed on join that chat is being translated for them, if they don't want it, they can turn it off.
-This plugin can uses google translate that will give us %90 accurate results.
+This plugin uses google translate that to 90% gives us accurate results.
