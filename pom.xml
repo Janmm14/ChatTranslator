@@ -43,7 +43,7 @@
                 <configuration>
                     <artifactSet>
                         <includes>
-                            <include>com.comphenix.protocol:ProtocolLib-Spigot</include>
+                            <include>com.comphenix.protocol:PacketWrapper</include>
                         </includes>
                     </artifactSet>
                 </configuration>
