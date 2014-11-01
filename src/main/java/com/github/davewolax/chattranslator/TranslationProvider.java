@@ -1,4 +1,4 @@
-package com.github.davewolax.chattransalator;
+package com.github.davewolax.chattranslator;
 
 import lombok.NonNull;
 
