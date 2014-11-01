@@ -28,10 +28,7 @@ public class ChatMessageSendingListener extends PacketAdapter {
 	@SuppressWarnings("unchecked")
 	@Override
 	public void onPacketSending(final PacketEvent event) {
-		if (event.getPacketType() != PacketType.Play.Server.CHAT) {
-			return;
-		}
-		if (event.isCancelled()) {
+		if (event.isCancelled() || event.getPacketType() != PacketType.Play.Server.CHAT) {
 			return;
 		}
 		final PacketContainer packet = event.getPacket();
@@ -45,10 +42,9 @@ public class ChatMessageSendingListener extends PacketAdapter {
 			for (final WrappedChatComponent chatComponent : chatComponentValues) {
 				final Object parsed = JSONValue.parse(chatComponent.getJson());
 				if (parsed == null) {
-					if (chatComponent.getJson().isEmpty()) {
-						continue;
-					} else {
-						// TODO print error
+					if (!chatComponent.getJson().isEmpty()) {
+						System.out.println("[ChatTranslator] An error occurred while parsing json message: " + chatComponent.getJson());
+						System.out.println("[ChatTranslator] Please fill an issue on https://github.com/davewolax/ChatTranslator");
 					}
 				} else if (parsed instanceof String) {
 					chatComponent.setJson(translator.getTranslationOf(((String) parsed), "auto", lang));
