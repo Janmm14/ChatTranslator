@@ -1,4 +1,4 @@
-package com.github.davewolax;
+package com.github.davewolax.chattranslator;
 
 import com.comphenix.protocol.ProtocolLibrary;
 import com.comphenix.protocol.ProtocolManager;
@@ -16,7 +16,7 @@ import java.util.UUID;
 public class Main extends JavaPlugin {
 
 	@Getter
-	private TranslationProvider translationProvider; // TODO implement
+	private final TranslationProvider translationProvider = new GoogleTranslator();
 
 	@Override
 	public void onEnable() {

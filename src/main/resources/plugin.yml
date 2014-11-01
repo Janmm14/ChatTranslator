@@ -1,12 +1,12 @@
-name: ${project.name}
+name: '${project.name}'
 version: '${project.version}'
 description: '${project.description}'
 
 author: davewolax
 authors: [janmm14]
-website: https://github.com/davewolax/ChatTranslator
+website: 'https://github.com/davewolax/ChatTranslator'
 
-main: com.github.davewolax.Main
+main: com.github.davewolax.chattranslator.Main
 depend: [ProtocolLib]
 #softdepend: []
 #loadbefore: []

@@ -1,4 +1,4 @@
-package com.github.davewolax;
+package com.github.davewolax.chattranslator;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;

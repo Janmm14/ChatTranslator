@@ -1,4 +1,4 @@
-package com.github.davewolax;
+package com.github.davewolax.chattranslator;
 
 import com.comphenix.protocol.PacketType;
 import com.comphenix.protocol.events.ListenerPriority;
